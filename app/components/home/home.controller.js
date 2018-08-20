@@ -24,11 +24,12 @@
             }
         );
 
-        vm.newsClickEvent = function(url){
+        vm.newsClickEvent = function (url) {
             console.log('newsClickEvent called ');
             window.open(url, '_blank');
         };
 
+        // internal methods
         function getNewsHeadlinesCall() {
             return getNewsHeadlines().then(function (data) {
                 console.info('NewsHeadlines', data);

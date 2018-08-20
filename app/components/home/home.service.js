@@ -14,8 +14,6 @@
 
         return service;
 
-        ////////////
-
         function getNewsHeadlines() {
             return $http.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=' + apiKey)
                 .then(getNewsHeadlinesComplete)
